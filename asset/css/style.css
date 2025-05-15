@@ -1,0 +1,15 @@
+body {
+  background-color: #343a40;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.header-color{
+   color: #3b74e6;
+   text-underline-offset: 5px;
+   font-weight: bold;
+}
