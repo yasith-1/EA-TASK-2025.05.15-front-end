@@ -13,8 +13,8 @@
 
 </head>
 
-<body class="d-flex justify-content-center align-items-center vh-100">
-    <div class="container">
+<body>
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 rounded-5">
                 <div class="card text-center">
@@ -33,13 +33,44 @@
 
                         <div class="input-group mb-3 w-75">
                             <span class="input-group-text" id="basic-addon1">Age</span>
-                            <input type="text" class="form-control" id="txt-age">
+                            <input type="number" class="form-control" id="txt-age">
                         </div>
                     </div>
-                    <div class="card-footer text-body-secondary p-3">
-                        <button class="btn btn-primary w-50" id="get-detail-button">Get Details</button>
+                    <div class="card-footer text-body-secondary p-3 mt-sm-3">
+                        <div class="row g-2">
+                            <div class="col-12 col-md-4">
+                                <button class="btn btn-primary w-100" id="set-detail-button">Set Details</button>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <button class="btn btn-success w-100" id="get-detail-button">Get Details</button>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <button class="btn btn-secondary w-100" id="clear-button">Clear</button>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 d-none" id="student-table-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 rounded-5">
+                <table class="table table-striped table-hover mt-4 rounded-4">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Name</th>
+                            <th class="text-center">Address</th>
+                            <th class="text-center">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-table-body">
+                        <!-- Student details will be appended here -->
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -53,6 +84,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
